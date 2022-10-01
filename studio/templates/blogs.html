@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<html lang="en"></html>
+<body class="blog-body">
+{% if user.is_authenticated %}
+    <div class="tool-bar">
+        <a class="create-blog  " href=" {% url 'blog_new' %} ">СОЗДАТЬ НОВЫЙ ПОСТ</a>
+    </div>
+{% endif %}
+    <section class="post-page">
+          {% for post in object_list %}
+            <div class="post-entry">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    <h2 class="blog-title"><a href="{% url 'post_detail' post.pk %}">{{ post.title }}</a></h2>
+                    <p class="blog-text"> {{ post.body }}</p>
+                </form>
+            </div>
+          {% endfor %}
+        <div class="located-more"></div>
+        <footer class="main_footer_blog">
+            <div class="item_footer ITfooter1">
+                <a href="#" class="footer_logo">
+                    <img src="{% static 'IMG/LOGO/FOXLOGODIS.png' %}" width="120px" height="120px" alt="">
+                    <p>STUDIO <br> LKA</p>
+                </a>
+            </div>
+        
+            <div class="item_footer ITfooter2">
+                <ul class="rule_list">
+                    <li><a href="#">Studio rules & Rental agreement </a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        
+            <div class="item_footer ITfooter3">
+                <span class="copyright">© Copyright <a href="#">Studio LKA</a></span>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
+{% endblock%}

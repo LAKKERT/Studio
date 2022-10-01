@@ -1,0 +1,37 @@
+<!doctype html>
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+{% block content %}
+<body class="login-bg">
+<section class="sign_up_section">
+    <img class="tri-fox" src="{% static 'IMG/foxes/fox-triangle.png' %}" alt="" height="800px">
+    
+    <div class="login-registration">
+          <div class="login">
+            <div class="regist_container">
+                <p class="Helo">ПРИВЕТ</p>
+                <div class="input_field">
+                    <form method="post" >
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit" class="Button-Login">Авторизоваться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+{% endblock content %}
+
+
+

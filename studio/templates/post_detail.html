@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    {% block content %}
+<body class="blog-body">
+<section class="post-page">
+    <div class="back">
+        <a href="{% url 'main_post' %}"><img class="img-back" src="{% static 'IMG/svgs/back.svg' %}" width="25px" height="25px"></a>
+        <a href="{% url 'main_post' %}" class="back-page">ВЕРНУТЬСЯ</a>
+    </div>
+      <div class="blog-new-style">
+            <div class="post-detail">
+                <h2 class="detail-title"> {{ post.title }} </h2>
+                <p class="detail-body"> {{ post.body }} </p>
+                <p class="posts-author">АВТОР :{{ post.author }}</p>
+                {% if user.is_authenticated and user == post.author %}
+                <div class="tools-container">
+                    <a class="tools-edit" href="{% url 'blog_edit' post.pk %}"><img src="{% static 'IMG/svgs/editing.svg' %}" width="50px" height="50px"></a>
+                    <a class="tools-edit" href="{% url 'blog_delete' post.pk %}"><img class="delete-post-img" src="{% static 'IMG/svgs/remove.svg' %}" width="50px" height="50px"></a>
+                </div>
+                {% endif %}
+                <div class="comments_list">
+                    <h1 class="comment_title">КОММЕНТАРИИ</h1>
+                    <a href="{% url 'comment_new' post.pk %}"> СОЗДАТЬ КОММЕНТАРИЙ</a>
+                    {% for comment in post.comments.all %}
+                    <div class="outline_comment">
+                            <p>
+                                <div class="author_box">
+                                    <span class="comment_author">{{ comment.author }} </span>
+                                </div>
+                                <div class="comments_style">
+                                    <p class="comment_text" >{{ comment }}</p>
+                                </div>
+                            </p>
+                            {% if user.is_authenticated %}
+                                {% if user.id == comment.author.id %}
+                                    <div class="properties">
+                                        <a href="{% url 'comment_edit' comment.pk %}">Редактировать</a>
+                                        <a href="{% url 'comment_del' comment.pk %}">Удалить</a>
+                                    </div>
+                                {% endif %}
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+                <div class="located-more"></div>
+            </div>
+    </div>
+</section>
+</body>
+   {% endblock content %}
+</html>

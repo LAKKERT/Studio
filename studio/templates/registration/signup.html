@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% block content %}
+<body class="body_signup">
+<section class="sign_up_section">
+    <img class="tri-fox" src="{% static 'IMG/foxes/fox-triangle.png' %}" alt="" height="800px">
+<div class="signup-registration">
+   <div class="regist">
+        <div class="signup_container">
+            <p class="Helo">ПРИВЕТ</p>
+            <p class="reg-dis">Прежде чем пользываться нашими сервисами вам нужно создать аккаунт.</p>
+            <div class="input_field">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                <button type="submit" class="Button-Login but-reg">Sign up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+</body>
+{% endblock content %}
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'css/reg_body.css' %}">
+        <link rel="stylesheet" href="{% static 'css/base_header.css' %}">
+        <link rel="stylesheet" href="{% static 'css/registration.css' %}">
+        <link rel="stylesheet" href="{% static 'css/about.css' %}">
+        <link rel="stylesheet" href="{% static 'css/blog_style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/home_style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/contacts.css' %}">
+        <link rel="stylesheet" href="{% static 'css/FAQ.css' %}">
+        <link rel="stylesheet" href="{% static 'css/gallary.css' %}">
+    {% endblock %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+ <header>
+
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-5">
+         <div class="logo_text_header">
+             <a href="{% url 'home' %}"><img src="{% static 'IMG/LOGO/FOXLOGODIS.png' %}" width="100" height="100" alt="Фото студи для аренды"></a>
+             <a href="{% url 'home' %}" class="Logo_text">STUDIO <br> LKA</a>
+         </div>
+
+
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false", aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+         <!-- <div class="navMenu">
+              <a href="{% url 'main_post' %}">СОБЫТИЯ</a>
+              <a href="{% url 'about_page' %}">о нас</a>
+              <div class="rent" >Аренда
+                  <div class="drop_rent">
+                        <div class="rent_container">
+                            <div class="rent_item"><a href="#">ПРАЙС</a></div>
+                            <div class="rent_item"><a href="#">F.A.Q</a></div>
+                            <div class="rent_item"><a href="#">ГАЛЕРЕЯ</a></div>
+                            <div class="rent_item"><a href="#">ПРАВИЛА </a></div>
+                        </div>
+                  </div>
+              </div>
+
+              <div class="contacts" >контакты
+                    <div class="drop_contacts">
+                        <div class="contacts_container">
+                            <div class="contacts_item num1"><p>Екатеринбург</p></div>
+                            <div class="contacts_item num1" ><span>+794 322 435 67</span></div>
+
+                            <div class="contacts_item num2">Екатеринбург</div>
+                            <div class="contacts_item num2"><span>+794 322 435 67</span></div>
+
+                            <div class="contacts_item num3">Екатеринбург</div>
+                            <div class="contacts_item num3"><span>+794 322 435 67</span></div>
+
+                            <div class="contacts_item Email email_header" ><span class="email_span"><a href="mailto:StudioLKA@mail.ru"></a>StudioLKA@mail.ru</span></div>
+
+                            <div class="contacts_item social links_heder">
+                                <a href="#"><img src="{% static 'IMG/social/youtube-logo.png' %}" width="50px" height="50px" alt=""></a>
+                                <a href="#"><img src="{% static 'IMG/social/instagram.png' %}" width="50px" height="50px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <div class="dot"></div>
+            <div class="signin-out_buttons">
+
+            </div>
+         </div> -->
+
+         <div class="collapse_nav collapse navbar-collapse" id="navbarCollapse">
+            <div class="nav-block">
+                <a class="nav_links" href="{% url 'main_post' %}">СОБЫТИЯ</a>
+                <a class="nav_links" href="{% url 'about_page' %}">о нас</a>
+                <div class="rent" >Аренда
+                    <!-- <div class="drop_rent">
+                          <div class="rent_container">
+                              <div class="rent_item"><a href="#">ПРАЙС</a></div>
+                              <div class="rent_item"><a href="#">F.A.Q</a></div>
+                              <div class="rent_item"><a href="#">ГАЛЕРЕЯ</a></div>
+                              <div class="rent_item"><a href="#">ПРАВИЛА </a></div>
+                          </div>
+                    </div> -->
+                </div>
+                <a class="nav_links" href="{% url 'contacts_page' %}" >контакты
+                    <!-- <div class="drop_contacts">
+                        <div class="contacts_container">
+                            <div class="contacts_item num1"><p>Екатеринбург</p></div>
+                            <div class="contacts_item num1" ><span>+794 322 435 67</span></div>
+
+                            <div class="contacts_item num2">Екатеринбург</div>
+                            <div class="contacts_item num2"><span>+794 322 435 67</span></div>
+
+                            <div class="contacts_item num3">Екатеринбург</div>
+                            <div class="contacts_item num3"><span>+794 322 435 67</span></div>
+
+                            <div class="contacts_item Email email_header" ><span class="email_span"><a href="mailto:StudioLKA@mail.ru"></a>StudioLKA@mail.ru</span></div>
+
+                            <div class="contacts_item social links_heder">
+                                <a href="#"><img src="{% static 'IMG/social/youtube-logo.png' %}" width="50px" height="50px" alt=""></a>
+                                <a href="#"><img src="{% static 'IMG/social/instagram.png' %}" width="50px" height="50px" alt=""></a>
+                            </div>
+                        </div>
+                    </div> -->
+                </a>
+
+                <a class="nav_links" href="{% url 'FAQ_page' %}">F.A.Q</a>
+
+                <!-- <a class="nav_links" href="{% url 'gallary_page' %}">ГАЛЕРЕЯ</a> -->
+            </div>
+              <div class="auth-block">
+                  {% if user.is_authenticated %}
+                      <div class="logout-box" >
+                          <p class="user_name">Hi {{ user.username}} <img src="{% static 'IMG/foxes/red-sleep-fox.png' %}" width="60px" height="60px"></p>
+                          <a class="logout-link btn btn-outline-secondary" href="{% url 'logout' %}">logout</a>
+                      </div>
+                  {% else %}
+                      <form class="form-inline ml-auto">
+                          <div class="where-fox">
+                              <p class="Where-text">WHERE ARE YOU?</p>
+                              <img src="{% static 'IMG/foxes/where-foxR.png' %}">
+                          </div>
+                          <a href="{% url 'login' %}" class="btn btn-outline-secondary">Login</a>
+                          <a href="{% url 'signup' %}" class="btn btn-outline-warning ml-2">Sign up</a>
+                      </form>
+                  {% endif %}
+              </div>
+         </div>
+     </nav>
+ </header>
+
+    <div class="container-reg">
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

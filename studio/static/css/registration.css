@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,100,500);
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Pacifico&display=swap');
+
+input {
+    border: none;
+}
+
+.sign_up_section {
+    position: relative;
+    top: 110px;
+    width: 100%;
+    min-height: 870px;
+    height: 100%;
+    text-align: center;
+    background-image: linear-gradient(180deg, #fda276 60%, #3f1d3f 100%);
+}
+
+.sign_up-bg {
+    background-image: linear-gradient(to bottom, #de5429, #cf6624, #c07327, #b27e31, #a6863f, #ae8549, #b48453, #b9845e, #c87e72, #cb7c8e, #c080ab, #a78ac4);
+    width: 100%;
+    height: 100%;
+}
+
+.body_signup {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+}
+
+.signup-registration {
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.login-registration {
+    width: 100%;
+    height: 100%;
+}
+
+.tri-fox {
+    position: absolute;
+    left: 25%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.login-bg {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+
+    background-image: linear-gradient(180deg, #fda276 60%, #3f1d3f 100%);}
+
+.regist {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    margin-top: 150px;
+
+
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 350px;
+    margin-top: 200px;
+}
+
+.signup_container {
+    width: 320px;
+    height: 600px;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .1);
+    background-image: linear-gradient(to left bottom, #ff7246, #fd8a47, #faa04d, #f7b458, #f3c769, #f9c574, #fdc47f, #ffc38a, #ffb29c, #ffa6b9, #faa4da, #d0aaf6);    text-align: center;
+    padding: 20px 15px 0 15px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.regist_container {
+    width: 320px;
+    height: 420px;
+    box-shadow: 10px 10px 2px 1px rgba(0, 0, 255, .1);
+    background-image: linear-gradient(to left bottom, #ff7246, #fd8a47, #faa04d, #f7b458, #f3c769, #f9c574, #fdc47f, #ffc38a, #ffb29c, #ffa6b9, #faa4da, #d0aaf6);    text-align: center;
+    padding: 20px 15px 0 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.input_field{
+    margin-top: 25px;
+    width: 100%;
+
+}
+
+.input-line {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+
+    background: url('nobg.png') repeat;
+    border-bottom: 2px solid white;
+
+    color: rgba(0, 0, 0, 0.5);
+
+    outline: none;
+}
+
+input[type="text"]{
+    font-size: 20px;
+}
+
+input[type="email"]{
+    font-size: 20px;
+}
+
+input[type="password"]{
+    font-size: 20px;
+}
+
+
+.create-acc-button {
+    width: 230px;
+    height: 50px;
+    cursor: pointer;
+    background: none;
+    border: 2px solid rgba(7, 105, 109, 0.65);
+    border-radius: 25px;
+    color: rgba(7, 105, 109, 0.65);
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    font-size: 24px;
+    font-size: 1.2rem;
+    font-family: roboto;
+    font-weight: 300;
+    line-height: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.create-acc-button:hover{
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.reg-dis {
+    font-size: 24px;
+    font-family: 'Caveat', cursive;
+    font-family: 'Pacifico', cursive;
+    color: rgba(15, 17, 17, 0.7);
+}
+
+.Helo{
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Pacifico';
+    color: rgba(15, 17, 17, 0.7);
+}
+
+.Button-Login {
+    width: 230px;
+    height: 50px;
+    cursor: pointer;
+    background: none;
+    border: 2px solid rgba(7, 105, 109, 0.65);
+    border-radius: 25px;
+    color: rgba(7, 105, 109, 0.65);
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    font-size: 24px;
+    font-size: 1.2rem;
+    font-family: roboto;
+    font-weight: 300;
+    line-height: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+
+.Button-Login:hover{
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}

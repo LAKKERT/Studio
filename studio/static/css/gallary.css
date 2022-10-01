@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.FAQ_main {
+    padding: 0 15% 0 15%;
+}
+
+.FAQ_section {
+
+    margin-top: 130px;
+}
+
+.FAQ_content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.drop_box {
+    width: 500px;
+    margin-right: 20px;
+}
+
+.title_brop_box {
+
+    margin-left: 25%;
+}

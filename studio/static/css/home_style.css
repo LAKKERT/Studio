@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Righteous&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Black+Ops+One&family=Righteous&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Black+Ops+One&family=Jura:wght@500&family=Righteous&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Black+Ops+One&family=Jura:wght@500&family=Kurale&family=Righteous&family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@500&family=Zen+Maru+Gothic&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+
+
+.main_construction {
+
+    background-image: url(../img/Background/BackGround.png) ;
+}
+  
+/* preview */
+
+
+
+.main-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1009px;
+    padding: 0 10% 0 10%;
+    z-index: -2;
+
+}
+
+.Main_BG {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+
+    filter: blur(6px);
+    pointer-events: none;
+    object-fit: cover;
+
+}
+
+.imgs-block {
+    width: auto;
+    height: 100%;
+    padding: 0 60px 0 60px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.begin_content {
+    text-align: center;
+    
+}
+
+.name_Studio {
+    position: relative;
+    font-family: 'Stalinist One', cursive;
+    text-shadow: 4px 4px 3px #9c03a1;
+    color: coral;
+    margin-bottom: 40px;
+    z-index: 1;
+}
+
+.short_discription{
+    position: relative;
+    font-size: 40px;
+    color: coral;
+    text-shadow: 3px 3px 3px #9c03a1;
+    font-family: 'Cormorant Infant', serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    z-index: 1;
+    min-width: 500px;
+}
+/* .example-img {
+    pointer-events: none;
+    object-fit: cover;
+}
+
+.bg_2 {
+    margin-top: 20%;
+
+} */
+
+/* end priview */
+
+/* adventages */
+.adventages_box{
+    width: 100%;
+    height: auto;
+
+}
+
+.why_heading {
+    text-align: center;
+    font-size: 64px;
+    color: rgb(187, 87, 50);
+    font-family: 'Stalinist One', cursive;
+    text-shadow: 4px 4px 3px #9c03a1;
+}
+
+.advantages {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 20% 0 20%;
+}
+
+.grid_item{
+    width: 100px;
+    height: 140px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.icons_adv{
+    width: 100px;
+    height: 100px;
+}
+
+.text_adventage {
+    font-size: 24px;
+    color: coral;
+}
+
+
+.card{
+    display: flex;
+    position: relative;
+    width: 460px;
+    height: 260px;
+
+    justify-content: center;
+    align-items: center;
+
+    margin: 15px 30px;
+    transition: 0.5s;
+
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+
+    background-color: #EDD2C5;
+    opacity: 50%;
+
+    border-radius: 8px;
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.25);
+}
+
+.content h2 {
+    position: absolute;
+    left: -10px;
+    top: 0px;
+    font-size: 46px;
+    margin-left: 20px;
+    text-align: left;
+
+    color: rgb(247, 80, 19);
+}
+
+.content p {
+
+    text-align: center;
+    font-size: 26px;
+
+
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.stars {
+    font-size: 46px;
+    text-align: center;
+}
+
+.adventage_block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10% 0 10%;    
+}
+
+/* end adventages */
+
+/* OUR WORKS */
+
+
+.works {
+    align-self: center;
+    z-index: 5;
+
+}
+
+.works h2 {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 0px;
+    font-family: 'Stalinist One', cursive;
+    text-shadow: 4px 4px 3px #9c03a1;
+    color: rgb(241, 111, 64);
+}
+
+.gallary_link{
+    text-align: center;
+    width: 100%;
+
+}
+
+.glink{
+    font-size: 64px;
+    color: black;
+    text-decoration: none;
+    
+    transition-duration: 1s;
+}
+
+.glink:hover {
+    color: rgb(248, 102, 58);
+    text-decoration: underline;
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 2% 1%;
+    box-sizing: border-box;
+    height: 800px;
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,5,0,.3);
+    line-height: 0;
+  }
+
+  .expample_photo {
+    pointer-events: none;
+  }
+
+  
+  .box > img {
+    width: 200%;
+    height: 100%;
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  
+  .box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+/* OUR WORKS END */
+  
+
+
+  
+
+
+/* OUR WORKS END */

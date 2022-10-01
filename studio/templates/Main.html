@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/MainHeader_style.css">
+    <link rel="stylesheet" href="styles/MainBody_style.css">
+    <link rel="stylesheet" href="{% static 'css/MainBody_style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/MainHeader_style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+        <div class="scroller">
+            <a href="#one"><div class="scroller_dot"></div></a>
+            <a href="#two"><div class="scroller_dot"></div></a>
+            <a href="#three"><div class="scroller_dot"></div></a>
+            <a href="#four"><div class="scroller_dot"></div></a>
+            <a href="#fifth"><div class="scroller_dot"></div></a>
+        </div>
+
+        <header>
+            <div class="header_logo">
+                <a href="#"><img src="{% static 'IMG/LOGO/FOXLOGODIS.png' %}" width="100" height="100" alt="Фото студи для аренды"></a>
+                <a href="#" class="Logo_text">STUDIO <br> LKA</a>
+
+            </div>
+            <nav class="navMenu">
+              <a href="#">СОБЫТИЯ</a>
+              <a href="#">о нас</a>
+              <div class="rent" >Аренда
+                  <div class="drop_rent">
+                        <div class="rent_container">
+                            <div class="rent_item"><a href="#">ПРАЙС</a></div>
+                            <div class="rent_item"><a href="#">F.A.Q</a></div>
+                            <div class="rent_item"><a href="#">ГАЛЕРЕЯ</a></div>
+                            <div class="rent_item"><a href="#">ПРАВИЛА </a></div>
+                        </div>
+                  </div>
+              </div>
+
+              <div class="contacts" >контакты
+                    <div class="drop_contacts">
+                        <div class="contacts_container">
+                            <div class="contacts_item num1"><p>Екатеринбург</p></div>
+                            <div class="contacts_item num1" ><span>+794 322 435 67</span></div>
+
+                            <div class="contacts_item num2">Екатеринбург</div>
+                            <div class="contacts_item num2"><span>+794 322 435 67</span></div>
+
+                            <div class="contacts_item num3">Екатеринбург</div>
+                            <div class="contacts_item num3"><span>+794 322 435 67</span></div>
+
+                            <div class="contacts_item Email email_header" ><span class="email_span"><a href="mailto:StudioLKA@mail.ru"></a>StudioLKA@mail.ru</span></div>
+
+                            <div class="contacts_item social links_heder">
+                                <a href="#"><img src="{% static 'IMG/social/youtube-logo.png' %}" width="50px" height="50px" alt=""></a>
+                                <a href="#"><img src="{% static 'IMG/social/instagram.png' %}" width="50px" height="50px" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+              </div>
+              <div class="dot"></div>
+            </nav>
+            <div class="signin-out_buttons">
+
+            </div>
+        </header>
+        <div class="slider_two" id="two"></div>
+        <div class="slider_three" id="three"></div>
+        <div class="slider_four" id="four"></div>
+        <div class="slider_fifth" id="fifth"></div>
+    <main class="main_container">
+        <section class="Mains" id="one">
+            <div class="BackLight"></div>
+            <div class="BackLight2"></div>
+            <div class="BackLight3"></div>
+
+            <img class="MainBG" src="{% static 'IMG/Preview/W5ksFVEtONQ.jpg' %}" width="1890px" height="900px" alt="">
+
+            <img class="S2img1" src="{% static 'IMG/Preview/1612233597_9-p-fioletovii-klubnii-fon-9.jpg' %}" width="514" height="342" alt="">
+
+            <img class="S2img2" src="{% static 'IMG/Preview/Photo-studio-brooklyn-.jpg' %}" width="514" height="342" alt="">
+
+            <img class="S2img3" src="{% static 'IMG/Preview/KEMP_london_park_royal_04.jpg' %}" width="514" height="342" alt="">
+        </section>
+
+        <section class="Why_LKA" >
+            <h1 class="why_heading">ПОЧЕМУ STUDIA LKA</h1>
+
+            <Div class="advantages">
+                <div class="grid_item">
+                    <img class="icons_adv" src="IMG/Adventages/studio.png" alt="">
+                    <p class="adven">LIGHT</p></div>
+                <div class="grid_item">
+                    <img class="icons_adv" src="IMG/Adventages/wifi.png" alt="">
+                <p class="adven">WIFI</p>
+                </div>
+                <div class="grid_item">
+                    <img class="icons_adv" src="IMG/Adventages/air-conditioner.png" alt="">
+                    <p class="adven">A/C</p>
+                </div>
+                <div class="grid_item">
+                    <img class="icons_adv" src="IMG/Adventages/2312402.png" alt="">
+                    <p class="adven">PRIVATE</p>
+                </div>
+                <div class="grid_item">
+                    <img class="icons_adv" src="IMG/Adventages/filter.png" alt="">
+                    <p class="adven">EDIT</p>
+                </div>
+                <div class="grid_item">
+                    <img class="icons_adv" src="IMG/Adventages/more.png" alt="">
+                <p class="adven">MORE</p>
+                </div>
+            </Div>
+
+            <div class="adventage_grid">
+                <div class="adventage_item ">
+                    <div class="card">
+                        <div class="content">
+                            <h2>Online</h2>
+                            <p>Быстрая запись и аренда студии, В удобное вам время</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventage_item">
+                    <div class="card item2" >
+                        <div class="content">
+                            <h2>Friendly</h2>
+                            <p>Дружелюбная и знающая команда, которая поможет вам с фотосессией</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventage_item">
+                    <div class="card item3">
+                        <div class="content">
+                            <h2>4 - 5</h2>
+                            <p>В Разы Более Низкая Ставка: <br>чем чаще вы приходите, тем больше скидка</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventage_item">
+                    <div class="card item4">
+                        <div class="content">
+                            <h2>Discounted</h2>
+                            <p>Почасовые пакеты со скидкой</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventage_item">
+                    <div class="card item5">
+                        <div class="content">
+                            <h2>Unique</h2>
+                            <p>Лучшие декорации и дизайны интерьеров в стиле Ретрофутуризм</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventage_item">
+                    <div class="card item6">
+                        <div class="content">
+                            <h2>Lots of Reviews</h2>
+                            <div class="stars">★★★★★</div>
+                            <p>Более чем 247+ отзывов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="works">
+            <h2>OUR WORKS</h2>
+
+            <div class="container">
+                <div class="box">
+                  <img class="expample_photo" src="IMG/Photo models/998f8596151611.5ea80f0a0d710.jpg">
+                </div>
+                <div class="box">
+                  <img class="expample_photo" src="IMG/Photo models/9c6e09d148227ce108a812598e9edca9.jpg">
+                </div>
+                <div class="box">
+                  <img class="expample_photo" src="IMG/Photo models/kai.boet_27894099_327904161029745_8148778576674553856_n.jpg">
+                </div>
+                <div class="box">
+                  <img class="expample_photo" src="IMG/Photo models/Screen-Shot-2018-05-14-at-8.44.00-PM-scaled.jpg">
+                </div>
+              </div>
+        </section>
+
+        <section class="comments">
+            <a class="prev" onclick="plusSlides(-1)"><img src="IMG/PER NEXT/per.png" width="100px" alt=""></a>
+            <a class="next" onclick="plusSlides(1)"><img src="IMG/PER NEXT/next.png" width="100px" alt=""></a>
+
+            <div class="news_cards_grid fade">
+
+                <div class="news_cards">
+                    <h2>FIO</h2>
+                    <div class="circle"></div>
+                    <div class="square">
+                        <p class="comment_text">Mi piace molto la mia scuola perché ho molte materie che riguardano il mondo dell'informatica! Ogni giorno ho 6 ore di lezione, tranne il sabato in cui ne ho 5.</p>
+                    </div>
+                </div>
+
+                <div class="news_cards">
+                    <h2>FIO</h2>
+                    <div class="circle"></div>
+                    <div class="square"></div>
+                </div>
+
+                <div class="news_cards">
+                    <h2>FIO</h2>
+                    <div class="circle"></div>
+                    <div class="square"></div>
+                </div>
+            </div>
+
+            <div class="news_cards_grid fade">
+
+                <div class="news_cards">
+                    <h2>FIO</h2>
+                    <div class="circle"></div>
+                    <div class="square">
+                        <p class="comment_text">erché ho molte materie che riguardano il mondo dell'informatica! Ogni giorno ho 6 ore di lezione, tranne il sabato in cui ne ho 5.</p>
+                    </div>
+                </div>
+
+                <div class="news_cards">
+                    <h2>FIO</h2>
+                    <div class="circle"></div>
+                    <div class="square">
+                        <p class="comment_text">erché ho molte materie che riguardano il mondo dell'informatica! Ogni giorno ho 6 ore di lezione, tranne il sabato in cui ne ho 5.</p>
+                    </div>
+                </div>
+
+                <div class="news_cards">
+                    <h2>FIO</h2>
+                    <div class="circle"></div>
+                    <div class="square"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="novadays">
+            <div class="novadays_container">
+                <h2>СОБЫТИЯ И НОВОСТИ</h2>
+                <div class="nova_gird">
+                    <div class="novadays_item">
+                        <h1>fighting the spread of Covid-19</h1>
+                        <p>Since all the websites you’ve even given your email to, now decided that the best way to bring joy to your day is to tell you how they are fighting this new virus, it is our turn to share how we are fighting the spread of Covid-19: </p>
+                        <div class="nova_footer">
+                            <a href="#">ЧИТАТЬ</a>
+                        </div>
+                    </div>
+                    <div class="novadays_item"></div>
+                    <div class="novadays_item"></div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="main_footer">
+        <div class="item_footer ITfooter1">
+            <a href="#" class="footer_logo">
+                <img src="IMG/LOGO/FOXLOGODIS.png" width="120px" height="120px" alt="">
+                <p>STUDIO <br> LKA</p>
+            </a>
+        </div>
+
+        <div class="item_footer ITfooter2">
+            <ul class="rule_list">
+                <li><a href="#">Studio rules & Rental agreement </a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="item_footer ITfooter3">
+            <span class="copyright">© Copyright <a href="#">Studio LKA</a></span>
+        </div>
+    </footer>
+
+
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("news_cards_grid");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "flex";
+            }
+        </script>
+
+</body>
+</html>

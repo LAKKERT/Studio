@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  {% extends 'base.html' %}
+  {% load static %}
+  {% block content %}
+<main class="add_post_style">
+    <section class="blog-detail-style">
+      <h1 class="title_createpost">СОЗДАНИЕ НОВОГО ПОСТА</h1>
+      <div class="new_post_create">
+        <form method="post">
+          {% csrf_token %}<br>
+          {{ form.title }}<br>
+          <!-- {{ form.author }}<br> -->
+          {{ form.body }}<br>
+          <span>{{ error }}</span>
+          <input class="CreatePost_btn" type="submit" value="СОЗДАТЬ">
+        </form>
+      </div>
+    </section>
+</main>
+
+
+{% endblock content %}
+</body>
+</html>

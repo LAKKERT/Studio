@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% extends 'base.html' %}
+    {% block content %}
+    <main class="add_post_style">
+        <section class="blog-detail-style">
+          <div class="new_post_create">
+            {% if user.is_authenticated %}
+                {% if user.id == post.author.id %}
+                <div class="del-confirm">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        <p class="delete_text">Are you sure you want to delete "{{ post.title }}"?</p>
+                        <input class="CreatePost_btn" type="submit"  value="Confirm"/>
+                    </form>       
+                </div>
+                {% else %}
+                   <div class="HEY">
+                        <p>Эййй... это не твой пост ;(</p>
+                   </div>
+                {% endif %}
+            {% endif %}
+          </div>
+        </section>
+    </main>
+    {% endblock %}
+</body>
+</html>

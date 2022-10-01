@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{% extends 'base.html' %}
+{% block content %}
+<body>
+    <main class="add_post_style">
+        <section class="blog-detail-style">
+            <div class="new_comment_container">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ Comment.atricle }} <br>
+                    {{ Comment.author }} <br>
+                    <div class="outline_CreateComment">     
+                        {{ Comment.comment }} <br>
+                    </div>
+                    <input class="CreatePost_btn" type="submit" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+{% endblock content %}
+</html>

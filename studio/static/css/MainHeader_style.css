@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    height: 1000px;
+    background-image: url("../IMG/Background/BackGround.png");
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background: #272727;
+
+    position: fixed;
+    z-index: 3;
+}
+
+.header_logo {
+    display: flex;
+    margin-left: 20px;
+}
+
+.Logo_text {
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: bold;
+    color: coral;
+}
+
+.navMenu {
+    text-align: center;
+    display: flex;
+    width: 800px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    width: 80px;
+    margin-right: 120px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.navMenu a:hover {
+    color: coral;
+  }
+
+  .contacts {
+      color: #f6f4e6;
+      text-decoration: none;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+      display: inline-block;
+      width: 80px;
+      margin-right: 120px;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+
+  }
+
+  .rent {
+    color: #f6f4e6;
+      text-decoration: none;
+      font-size: 1.2em;
+      text-transform: uppercase;
+      font-weight: 500;
+      display: inline-block;
+      width: 80px;
+      margin-right: 120px;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+  }
+
+  .contacts:hover {
+      color: coral;
+  }
+
+  .rent:hover {
+     color: coral;
+  }
+
+  .navMenu .dot {
+    width: 6px;
+    height: 6px;
+    background: coral;
+    border-radius: 50%;
+    opacity: 0;
+    margin-top: 30px;
+    -webkit-transform: translateX(30px);
+    transform: translateX(30px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navMenu a:nth-child(1):hover ~ .dot {
+    -webkit-transform: translateX(-740px);
+    transform: translateX(-740px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+  .navMenu a:nth-child(2):hover ~ .dot {
+    -webkit-transform: translateX(-555px);
+    transform: translateX(-555px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+  .navMenu .rent:nth-child(3):hover ~ .dot {
+    -webkit-transform: translateX(-360px);
+    transform: translateX(-360px);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 1;
+  }
+
+  .navMenu .contacts:nth-child(4):hover ~ .dot {
+      -webkit-transform: translateX(-140px);
+      transform: translateX(-140px);
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      opacity: 1;
+    }
+
+  .drop_rent {
+      display: block;
+
+      background-color: #444343;
+
+      position: absolute;
+      top: 60px;
+      left: 340px;
+
+      width: 200px;
+      height: 0px;
+      opacity: 70%;
+      border-radius: 5px;
+      transition-duration: 1s;
+  }
+
+  .rent:hover .drop_rent {
+      height: 200px;
+      border: 1px solid rgb(164, 80, 185);
+      border-radius: 5px;
+  }
+
+  .drop_contacts{
+      display: block;
+
+      background-color: #444343;
+
+      position: absolute;
+      top: 60px;
+      left: 500px;
+
+      width: 380px;
+      height: 0px;
+      opacity: 70%;
+      border-radius: 5px;
+      transition-duration: 1s;
+
+  }
+
+  .contacts:hover .drop_contacts{
+      height: 300px;
+      border: 1px solid rgb(164, 80, 185);
+      border-radius: 5px;
+  }
+
+  .contacts_container{
+      pointer-events: none;
+      display: grid;
+      grid-template-columns: 160px auto;
+      grid-template-rows: 60px 60px 60px 60px 60px;
+
+  }
+
+  .contacts_item {
+      display: block;
+      margin-left: 15px;
+      margin-top: 15px;
+      color: #f6f4e6;
+      opacity: 0%;
+
+      transition-duration: 1s;
+
+
+  }
+
+  .contacts:hover .contacts_item {
+      display: block;
+      opacity: 100%;
+  }
+
+  .Email {
+      grid-row-start: 4;
+      grid-column: 1 / 3;
+  }
+
+  .email_span {
+      text-transform: none;
+      text-align: center;
+      margin-left: 50%;
+      position: relative;
+      bottom: 30px;
+  }
+
+  .social{
+      display: block;
+      grid-row-start: 5;
+      grid-column: 1 / 3;
+
+
+      position: relative;
+      bottom: 20px;
+  }
+
+  .social a {
+
+      margin-right: 20px;
+  }
+
+  .contacts:hover .social a {
+    pointer-events: visible;
+  }
+
+  .rent_container{
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 200px;
+    grid-template-rows: 50px 50px 50px 50px;
+
+  }
+
+  .rent_item {
+    font-size: 16px;
+    text-align: center;
+
+    margin-left: 50px;
+    margin-top: 15px;
+
+    opacity: 0;
+  }
+
+  .rent:hover .rent_item {
+    pointer-events: visible;
+    opacity: 100%;
+  }
+
+.sign-up_button {
+  height: 50px;
+  width: 100px;
+
+}
+
+.signin-out_buttons {
+  width: 300px;
+  height: 100px;
+  background-color: aqua;
+  position: absolute;
+  bottom: 0;
+  left: 1500px;
+}

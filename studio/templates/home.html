@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% extends 'base.html'%}
+{% load static %}
+
+{% block content %}
+    <main class="main_construction">
+        <section class="main-info">
+            <img class="Main_BG" src="{% static 'IMG/Preview/gb-noblure.jpg' %}"  alt="">
+            <div class="begin_content">
+                <h1 class="name_Studio">PHOTO STUDIO LKA</h1>
+                <p class="short_discription">Мы специализируемся на производстве качественного фотоконтента, такого как мода и красота, съемка коллекций для дизайнеров одежды, снимки актеров, модельные тесты, розничная реклама и онлайн-коммерция - от однодневных съемок до долгосрочных отношений.</p>
+
+            </div>
+
+            <!-- <div class="imgs-block">
+                <img class="example-img bg_1" src="{% static 'IMG/Preview/corridor.jpg' %}" width="514" height="342" alt="">
+
+                <img class="example-img bg_2" src="{% static 'IMG/Preview/bike.jpg' %}" width="514" height="342" alt="">
+
+                <img class="example-img bg_3" src="{% static 'IMG/Preview/studio-chairs.jpg' %}" width="514" height="342" alt="">
+            </div> -->
+        </section>
+        <section class="adventages_box">
+            <h1 class="why_heading">ПОЧЕМУ STUDIA LKA</h1>
+            <div class="advantages">
+                <div class="grid_item">
+                    <img class="icons_adv" src="{% static 'IMG/Adventages/studio.png' %}" alt="">
+                    <p class="text_adventage">LIGHT</p></div>
+                <div class="grid_item">
+                    <img class="icons_adv" src="{% static 'IMG/Adventages/wifi.png' %}" alt="">
+                <p class="text_adventage">WIFI</p>
+                </div>
+                <div class="grid_item">
+                    <img class="icons_adv" src="{% static 'IMG/Adventages/air-conditioner.png' %}" alt="">
+                    <p class="text_adventage">A/C</p>
+                </div>
+                <div class="grid_item">
+                    <img class="icons_adv" src="{% static 'IMG/Adventages/security.png' %}" alt="">
+                    <p class="text_adventage">PRIVATE</p>
+                </div>
+                <div class="grid_item">
+                    <img class="icons_adv" src="{% static 'IMG/Adventages/filter.png' %}" alt="">
+                    <p class="text_adventage">EDIT</p>
+                </div>
+                <div class="grid_item">
+                    <img class="icons_adv" src="{% static 'IMG/Adventages/more.png' %}" alt="">
+                <p class="text_adventage">MORE</p>
+                </div>
+            </div>
+
+            <div class="adventage_block">
+                <div class="adventage_item ">
+                    <div class="card">
+                        <div class="content">
+                            <h2>Online</h1>
+                            <p>Быстрая запись и аренда студии, В удобное вам время</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventage_item">
+                    <div class="card item2" >
+                        <div class="content">
+                            <h2>Friendly</h1>
+                            <p>Дружелюбная и знающая команда, которая поможет вам с фотосессией</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventage_item">
+                    <div class="card item3">
+                        <div class="content">
+                            <h2>4 - 5</h1>
+                            <p>В Разы Более Низкая Ставка: <br>чем чаще вы приходите, тем больше скидка</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventage_item">
+                    <div class="card item4">
+                        <div class="content">
+                            <h2>Discounted</h1>
+                            <p>Почасовые пакеты со скидкой</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventage_item">
+                    <div class="card item5">
+                        <div class="content">
+                            <h2>Unique</h1>
+                            <p>Лучшие декорации и дизайны интерьеров в стиле Ретрофутуризм</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="adventage_item">
+                    <div class="card item6">
+                        <div class="content">
+                            <h2>Lots of Reviews</h1>
+                            <div class="stars">★★★★★</div>
+                            <p>Более чем 247+ отзывов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+            <section class="works">
+                <h2>OUR WORKS</h2>
+                <div class="container">
+                    <div class="box">
+                        <img class="expample_photo" src="{% static 'IMG/models/model1.jpg'%}">
+                    </div>
+                    <div class="box">
+                        <img class="expample_photo" src="{% static 'IMG/models/model2.jpg'%}">
+                    </div>
+                    <div class="box">
+                        <img class="expample_photo" src="{% static 'IMG/models/model3.jpg'%}">
+                    </div>
+                    <div class="box">
+                        <img class="expample_photo" src="{% static 'IMG/models/model4.jpg'%}">
+                    </div>
+                </div>
+            </section> 
+        </main>
+    
+{% endblock content %}
+
+</html>

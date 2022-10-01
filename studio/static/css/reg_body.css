@@ -1,0 +1,8 @@
+.container-reg {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    z-index: 0;
+}
